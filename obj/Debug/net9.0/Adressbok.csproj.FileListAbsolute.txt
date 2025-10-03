@@ -1,0 +1,15 @@
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\bin\Debug\net9.0\Adressbok.exe
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\bin\Debug\net9.0\Adressbok.deps.json
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\bin\Debug\net9.0\Adressbok.runtimeconfig.json
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\bin\Debug\net9.0\Adressbok.dll
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\bin\Debug\net9.0\Adressbok.pdb
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.AssemblyInfoInputs.cache
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.AssemblyInfo.cs
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.csproj.CoreCompileInputs.cache
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.sourcelink.json
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.dll
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\refint\Adressbok.dll
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.pdb
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\Adressbok.genruntimeconfig.cache
+C:\Users\cazpe\Documents\projectsCode\Inlämningsupgifter\Adressbok\obj\Debug\net9.0\ref\Adressbok.dll
