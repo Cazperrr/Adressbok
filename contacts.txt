@@ -1,8 +1,3 @@
-namn        |        adress        |        postnuimer        |        postort        |        mobil        |        email
-cazp       |       skön       |       4446       |       skepp       |       mobil       |       capz@mail.,coms
-namn      |      skönging      |      44566      |      ort      |      mobil      |      email
-cazp     |     adress     |     porstrt     |     454646     |     mobmb     |     email
-namn    |    adress    |    postnummer    |    postort    |    mobil    |    email
-namn   |   kyrkliden   |   ortnetn   |   ort   |   mobiol   |   emial
-namn  |  adress  |  s  |  s  |  s  |  s
-clslsls |  | s | s | ss | 
+namn|adres|postnum|portst|mbil|email
+s s s s    s|s s|post m|opst '||email
+namn|adress|postnummer|postort|mobil|email

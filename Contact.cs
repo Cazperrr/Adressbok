@@ -1,3 +1,5 @@
+using System.Reflection.Metadata.Ecma335;
+
 class Contact
 {
     static string filePath = "contacts.txt";
@@ -11,6 +13,7 @@ class Contact
     public string Email { get; set; }
 
     // Require all values when creating contact object
+    // Kanske ändra så allt inte är ett måste??
     public Contact(string name, string address, string zipCode, string postalAddress, string phone, string email)
     {
         Name = name;
@@ -32,7 +35,7 @@ class Contact
         {
             foreach (Contact c in contacts) // Loop through every contact in the list, write one line per contact
             {
-                writer.WriteLine($"{c.Name} | {c.Address} | {c.ZipCode} | {c.PostalAddress} | {c.Phone} | {c.Email}");
+                writer.WriteLine($"{c.Name.Trim()}|{c.Address.Trim()}|{c.ZipCode.Trim()}|{c.PostalAddress.Trim()}|{c.Phone.Trim()}|{c.Email.Trim()}");
             }
         }
     }
