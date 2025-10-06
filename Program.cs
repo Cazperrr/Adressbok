@@ -77,6 +77,7 @@ public class Program
         if (!contacts.Any())
         {
             Console.WriteLine("\nAdressboken är tom!");
+            Console.ReadLine();
             return;
         }
         foreach (var c in contacts)

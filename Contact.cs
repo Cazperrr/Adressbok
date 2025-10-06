@@ -13,7 +13,6 @@ class Contact
     public string Email { get; set; }
 
     // Require all values when creating contact object
-    // Kanske ändra så allt inte är ett måste??
     public Contact(string name, string address, string zipCode, string postalAddress, string phone, string email)
     {
         Name = name;
@@ -24,48 +23,60 @@ class Contact
         Email = email;
     }
 
-    public override string ToString() // Overrides built in ToString method so you see contact details instead of Namespace.Contact
+    public override string ToString() // Overrides built in ToString method so you see contact details
     {
         return $"{Name}, {Address}, {ZipCode}, {PostalAddress}, {Phone}, {Email}";
     }
 
     public static void SaveToFile(List<Contact> contacts)
     {
-        using (StreamWriter writer = new StreamWriter(filePath)) // Open or Create contacts.txt
+        try
         {
-            foreach (Contact c in contacts) // Loop through every contact in the list, write one line per contact
+            using (StreamWriter writer = new StreamWriter(filePath)) // Open or Create contacts.txt
             {
-                writer.WriteLine($"{c.Name.Trim()}|{c.Address.Trim()}|{c.ZipCode.Trim()}|{c.PostalAddress.Trim()}|{c.Phone.Trim()}|{c.Email.Trim()}");
+                foreach (Contact c in contacts) // Loop through every contact in the list, write one line per contact
+                {
+                    writer.WriteLine($"{c.Name.Trim()}|{c.Address.Trim()}|{c.ZipCode.Trim()}|{c.PostalAddress.Trim()}|{c.Phone.Trim()}|{c.Email.Trim()}");
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error saving contacts: {ex.Message}");
+            Console.ReadLine();
         }
     }
 
     public static void LoadFromFile(List<Contact> contacts)
     {
-        if (File.Exists(filePath)) // Check if file exists
+        try
         {
-            string[] lines = File.ReadAllLines(filePath); // Read whole file and return array of strings.
-            foreach (string line in lines)
+            if (File.Exists(filePath)) // Check if file exists
             {
-                string[] parts = line.Split('|'); // Splits strings by |
-                if (parts.Length == 6) // Only add if all 6 fields
+                string[] lines = File.ReadAllLines(filePath); // Read whole file and return array of strings.
+                foreach (string line in lines)
                 {
-                    // Create new Contact object for every Contact
-                    contacts.Add(new Contact(
+                    string[] parts = line.Split('|'); // Splits strings by |
+                    if (parts.Length == 6) // Only add if all 6 fields
+                    {
+                        // Create new Contact object for every Contact
+                        contacts.Add(new Contact(
 
-                        parts[0], // Name
-                        parts[1], // Address
-                        parts[2], // ZipCode
-                        parts[3], // PostalAddress
-                        parts[4], // Phone
-                        parts[5]  // Email
-                    ));
+                            parts[0], // Name
+                            parts[1], // Address
+                            parts[2], // ZipCode
+                            parts[3], // PostalAddress
+                            parts[4], // Phone
+                            parts[5]  // Email
+                        ));
+                    }
                 }
             }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine($"File: {filePath} does not exist.");
+            Console.WriteLine($"Error loading contacts: {ex.Message}");
+            Console.ReadLine();
         }
     }
 }

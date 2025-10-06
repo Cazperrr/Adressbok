@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Adressbok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bad9097ad5f9b734d14c1d93c53dc4e62b118bf6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41ff8d799450b6ffbc3130f45e5a60ef23a98155")]
 [assembly: System.Reflection.AssemblyProductAttribute("Adressbok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Adressbok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

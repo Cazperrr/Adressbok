@@ -1,3 +1,0 @@
-namn|adres|postnum|portst|mbil|email
-s s s s    s|s s|post m|opst '||email
-namn|adress|postnummer|postort|mobil|email
