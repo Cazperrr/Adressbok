@@ -4,7 +4,6 @@ class Contact
 {
     static string filePath = "contacts.txt";
 
-    // Properties
     public string Name { get; set; }
     public string Address { get; set; }
     public string ZipCode { get; set; }
@@ -51,7 +50,7 @@ class Contact
     {
         try
         {
-            if (File.Exists(filePath)) // Check if file exists
+            if (File.Exists(filePath))
             {
                 string[] lines = File.ReadAllLines(filePath); // Read whole file and return array of strings.
                 foreach (string line in lines)
